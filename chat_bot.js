@@ -1,5 +1,9 @@
 var counter=0;
 //properties
+const gk={
+    week_names:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    month_names:["January","February","March","April","May","June","July","August","September","October","November","December"]
+};
 const replace_txt=["<",">","hd's"];
 const rtr=["&lt;","&gt;","your"];
 const math_allowed=["1","2","3","4","5","6","7","8","9","10","+","/","*","-",".",")","(","[","]","{","}"];
@@ -8,6 +12,74 @@ const img={
     user:"images/a.gif",
     pfp:"images/pfp.jpg"
 };
+class Cmd{
+    #filter_t(m){
+        if(m==0){
+            return '00';
+        }
+        else if(m<10){
+            return `0${m}`;
+        }
+        return m;
+    }
+    day(){
+        let D=new Date();
+        return gk.week_names[D.getDay()];
+    }
+    month(){
+        let D=new Date();
+        return gk.month_names[D.getMonth()];
+    }
+    year(){
+        let D=new Date();
+        return D.getFullYear();
+    }
+    date(){
+        let D=new Date();
+        return `Today is ${D.getDate()} ${this.month()} ${D.getFullYear()}`
+    }
+    time(){
+        let D=new Date();
+        return `Time right now is: ${D.getHours()}:${this.#filter_t(D.getMinutes())}`;
+    }
+}
+function lp(arr){
+    let r="";
+    for(let x in arr){
+        r+=arr[x]+"<br>";
+    }
+    return r;
+}
+function check_for_commands(txt){
+    const prefix="!";
+    if(txt.startsWith(prefix)){
+        txt=txt.replace("!","");
+        //commands
+        const cmd=new Cmd();
+        const commands=["today","month","day","date","week_names","month_names","time","year"];
+        if(txt==commands[0]){
+            return cmd.date();
+        }else if(txt==commands[1]){
+            return cmd.month();
+        }else if(txt==commands[2]){
+            return cmd.day();
+        }else if(txt==commands[3]){
+            return cmd.date();
+        }else if(txt==commands[4]){
+            return lp(gk.week_names);
+        }else if(txt==commands[5]){
+            return lp(gk.month_names);
+        }else if(txt==commands[6]){
+            return cmd.time();
+        }else if(txt==commands[7]){
+            return cmd.year();
+        }else{
+            return false;
+        }
+    }else{
+        return false;
+    }
+}
 function msg_display(type,txt,img,align="left",name="HD"){
     const parent=document.getElementById("container");
     const elems=["section","section","h1","div","div","div"];
@@ -110,7 +182,7 @@ function filter(txt){
         return [txt];
     }
 }
-function msg_certainity(msg,question_arr,required=[]){
+function msg_certainity(msg,question_arr,required=[],negative=[]){
     let percentage;
     msg=filter(msg);
     let arr_len=question_arr.length;
@@ -131,6 +203,14 @@ function msg_certainity(msg,question_arr,required=[]){
         }
         if(!bool){messageCounter=0;}
     }
+    if(!(negative.length==0)){
+        for(let x in msg){
+            if(negative.includes(msg[x])){
+                messageCounter=0;
+                break;
+            }
+        }
+    }
     percentage=parseFloat(messageCounter);
     return (percentage*100);
 }
@@ -144,9 +224,8 @@ async function get_resp(msg){
         //name:msg_certainity(msg,q.name["keywords"],q.name["required"]),
     };
     for(let x in q_keys){
-        r[q_keys[x]]=msg_certainity(msg,q[q_keys[x]].keywords,q[q_keys[x]].required);
+        r[q_keys[x]]=msg_certainity(msg,q[q_keys[x]].keywords,q[q_keys[x]].required,q[q_keys[x].negative]);
     }
-    console.log(r);
     let values=Object.values(r);
     //get max
     let max=Math.max(...values);
@@ -154,7 +233,13 @@ async function get_resp(msg){
         let answer_key=Object.keys(r).find(key => r[key] === max);
         let ans=data.response[answer_key];
         let index=rand(ans.length);
-        return  data.response[answer_key][index];
+        let response_txt=  data.response[answer_key][index];
+        let cfc=check_for_commands(response_txt);
+        if(cfc!=false){
+            return cfc;
+        }else{
+            return response_txt;
+        }
     }else{
         return unknown[rand(unknown.length)];
     }}else{

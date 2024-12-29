@@ -1,59 +1,168 @@
 {
     "questions":{
+        "hd":{
+            "keywords":["who","hd","intro"],
+            "required":["hd"],
+            "negative":[]
+        },
         "what_are_you":{
             "keywords":["what","you","about","intro","who"],
-            "required":["you","intro"]
+            "required":["you"],
+            "negative":[]
         },
         "greetings":{
             "keywords":["hi","hello","hlo","halo","ola","hey","hie","bonjour","konichiwa","jumbo","namaste","ram"],
-            "required":[]
+            "required":[],
+            "negative":[]
         },
         "name":{
             "keywords":["name"],
-            "required":["your"]
+            "required":["your"],
+            "negative":[]
         },
         "age":{
             "keywords":["what","how","age","old"],
-            "required":[]
+            "required":["old","age"],
+            "negative":[]
         },
         "class":{
             "keywords":["class","grade"],
-            "required":[]
+            "required":[],
+            "negative":[]
+        },
+        "country":{
+            "keywords":["where","you","from","belong","country","citizen","nation"],
+            "required":["you","hd"],
+            "negative":[]
+        },
+        "hobby":{
+            "keywords":["hobby","what","hobbies","interested","like"],
+            "required":["things","hobby","hobbies"],
+            "negative":[]
+        },
+        "color":{
+            "keywords":["fav","favourite","color"],
+            "required":["color"],
+            "negative":[]
+        },
+        "chess":{
+            "keywords":["what","elo"],
+            "required":["elo"],
+            "negative":[]
+        },
+        "chess_plat":{
+            "keywords":["chess","play","platform","website","where"],
+            "required":["chess"],
+            "negative":[]
+        },
+        "socials":{
+            "keywords":["media","social","insta","instagram","discord","spotify","dc","yt","youtube"],
+            "required":[],
+            "negative":[]
+        },
+        "state":{
+            "keywords":["which","state","province","part"],
+            "required":["part","state","province"],
+            "negative":[]
+        },
+        "lang":{
+            "keywords":["what","lang","you","know","speak"],
+            "required":["you"],
+            "negative":[]
         },
         "good":{
-            "keywords":["you","good","gtk","glad","gth","smart","handsome","beautiful","love","nice","cute","noice","gud","great","gr8","awesome","fine","fantastic","wow","woah"],
-            "required":[]
+            "keywords":["you","good","like","gtk","glad","gth","smart","handsome","beautiful","love","nice","cute","noice","gud","great","gr8","awesome","fine","fantastic","wow","woah"],
+            "required":[],
+            "negative":[]
         },
         "ok":{
             "keywords":["decent","ok","oka","k"],
-            "required":[]
+            "required":[],
+            "negative":[]
         },
         "fav_genre":{
             "keywords":["genre","music","song"],
-            "required":["fav","favourite","genre","type"]
+            "required":["fav","favourite","genre","type"],
+            "negative":[]
         },
         "fav_song":{
             "keywords":["song","music"],
-            "required":["fav","favourite","like","love"]
+            "required":["fav","favourite","like","love"],
+            "negative":[]
         },
         "hru":{
             "keywords":["hry","hru","how","you","hud","hyd"],
-            "required":[]
+            "required":[],
+            "negative":[]
         },
         "wyd":{
             "keywords":["wyd","wud","what","you","doing"],
-            "required":[]
+            "required":[],
+            "negative":[]
         },
         "lmao":{
             "keywords":["lol","XD","lmao","lmfao"],
-            "required":[]
+            "required":[],
+            "negative":[]
         },
         "eh":{
             "keywords":["eh","uh",".-.","._.",":/",":\\","bru","bruh","huh"],
-            "required":[]
+            "required":[],
+            "negative":[]
+        },
+        "fav_artists":{
+            "keywords":["artist","music","song"],
+            "required":["artist","fav","favourite"],
+            "negative":[]
+        },
+        "height":{
+            "keywords":["what","your","height"],
+            "required":["your"],
+            "negative":[]
+        },
+        "time":{
+            "keywords":["time","what","now","rn","right"],
+            "required":["time"],
+            "negative":[]
+        },
+        "date":{
+            "keywords":["what","date","today"],
+            "required":["date","dates"],
+            "negative":[]
+        },
+        "weeks":{
+            "keywords":["name","mention","all","week"],
+            "required":["week","weeks"],
+            "negative":["which"]
+        },
+        "months":{
+            "keywords":["name","mention","all","month"],
+            "required":["month","months"],
+            "negative":["which"]
+        },
+        "today":{
+            "keywords":["today","tdy","what","date"],
+            "required":["today","tdy"],
+            "negative":[]
+        },
+        "month":{
+            "keywords":["month","what","now","which"],
+            "required":["month"],
+            "negative":[]
+        },
+        "year":{
+            "keywords":["what","year","right","now","today","tdy","yr"],
+            "required":["year","yr"],
+            "negative":[]
+        },
+        "day":{
+            "keywords":["day","is","today","tdy","what","now"],
+            "required":["is"],
+            "negative":[]
         }
     },
     "response":{
+        "hd":["I am HD.<br>Nice to meet you. I am 17years old and I like programming"],
         "what_are_you":["I am just a Non-AI chatbot with limited to responses related to about HD."],
         "greetings":["hi","hello","hlo","halo","ola","hey","hie"],
         "name":["My name is HD"],
@@ -66,6 +175,24 @@
         "hru":["I am good","I am fine","decent","I am ok","I am great"],
         "wyd":["nothing much"],
         "lmao":["lol","XD","lmao","lmfao"],
-        "eh":["eh","uh",".-.","._.",":/",":\\"]
+        "eh":["eh","uh",".-.","._.",":/",":\\"],
+        "fav_artists":["My favourite artists are:Linkin Park, Eminem,Coldplay,Shawn mendes"],
+        "height":["I am about 5'8ft or 174cm tall"],
+        "color":["My favourite color is blue and black"],
+        "country":["I am from India"],
+        "hobby":["I like programming, gaming and play a little bit of chess."],
+        "chess":["My elo is 409"],
+        "chess_plat":["I play chess on chess.com"],
+        "state":["I am from JH","I am from eastern part of India"],
+        "lang":["I know two languages:<OL><LI>Hindi(native)</LI><LI>English</LI></OL><br>I am learning french as well."],
+        "socials":["I am on discord with username: .hd__.<br>I am on spotify and discord only.<br>I deleted my insta account."],
+        "date":["!date"],
+        "weeks":["!week_names"],
+        "time":["!time"],
+        "month":["!month"],
+        "months":["!month_names"],
+        "year":["!year"],
+        "day":["!day"],
+        "today":["!today"]
     }
 }
