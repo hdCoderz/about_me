@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About me</title>
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="phone_tab.css">
+        <link rel="icon" href="images/pexels-eberhardgross-534164.jpg">
+    </head>
+<body onload="on_load()">
+    <dialog id="spotify">
+        <button class="spotify" onclick="spotify()">Open spotify</button><button class="cls" onclick="cls('spotify')">&times;</button><br>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5BfgDFjnnUzRtJoh5mY386?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </dialog>
+    <dialog id="credits">
+        <button class="cls" onclick="cls('credits')">&times;</button><br>
+        <h1>Credits</h1>
+        <HR noshade>
+        <UL type="circle">
+            <LI>Photo by Peng LIU: <a href="https://www.pexels.com/photo/raised-building-frame-169647/">Click here</a></LI>
+            <LI><a target="_blank" href="https://icons8.com/icon/59832/menu">Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></LI>
+            <LI><a target="_blank" href="https://icons8.com/icon/EInDLGZwVHf7/user">User</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></LI>
+            <LI>Photo by eberhard grossgasteiger: <a href="https://www.pexels.com/photo/person-showing-gray-mountain-534164/">Click here</a></LI>
+            <p style="text-align: center;"><B>Created by HD. 2024</B></p>
+        </UL>
+    </dialog>
+    <section id="set1">
+        <div id="topbtn">
+            <button class="menu_icon" onclick="menu()"></button><div id="menu">
+                <button class="sent"  onclick="open_dialog('credits')">Credit</button>
+                <button class="spotify" onclick="open_dialog('spotify')">Spotify</button>
+            </div>
+        </div>
+        <section id="msgbox">
+            <div id="profile" class="profile">
+                <div id="picture" class="pfp_anim pfp">
+                </div>
+                <h1 id="name">HD</h1>
+            </div>
+            <div id="intial_msg" class="msg" style="display: none;opacity: 0;">
+                Hello!
+            </div>
+        </section>
+        <section id="container">
+        </section>
+    </section><br>
+    <div id="msg_bar">
+        <input type="text" id="msg_val" placeholder="Type message"> &nbsp;
+        <button class="sent" id="send" onclick="sent()">Send</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="chat_bot.js"></script>
+</body>
+</html>

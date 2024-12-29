@@ -1,0 +1,71 @@
+{
+    "questions":{
+        "what_are_you":{
+            "keywords":["what","you","about","intro","who"],
+            "required":["you","intro"]
+        },
+        "greetings":{
+            "keywords":["hi","hello","hlo","halo","ola","hey","hie","bonjour","konichiwa","jumbo","namaste","ram"],
+            "required":[]
+        },
+        "name":{
+            "keywords":["name"],
+            "required":["your"]
+        },
+        "age":{
+            "keywords":["what","how","age","old"],
+            "required":[]
+        },
+        "class":{
+            "keywords":["class","grade"],
+            "required":[]
+        },
+        "good":{
+            "keywords":["you","good","gtk","glad","gth","smart","handsome","beautiful","love","nice","cute","noice","gud","great","gr8","awesome","fine","fantastic","wow","woah"],
+            "required":[]
+        },
+        "ok":{
+            "keywords":["decent","ok","oka","k"],
+            "required":[]
+        },
+        "fav_genre":{
+            "keywords":["genre","music","song"],
+            "required":["fav","favourite","genre","type"]
+        },
+        "fav_song":{
+            "keywords":["song","music"],
+            "required":["fav","favourite","like","love"]
+        },
+        "hru":{
+            "keywords":["hry","hru","how","you","hud","hyd"],
+            "required":[]
+        },
+        "wyd":{
+            "keywords":["wyd","wud","what","you","doing"],
+            "required":[]
+        },
+        "lmao":{
+            "keywords":["lol","XD","lmao","lmfao"],
+            "required":[]
+        },
+        "eh":{
+            "keywords":["eh","uh",".-.","._.",":/",":\\","bru","bruh","huh"],
+            "required":[]
+        }
+    },
+    "response":{
+        "what_are_you":["I am just a Non-AI chatbot with limited to responses related to about HD."],
+        "greetings":["hi","hello","hlo","halo","ola","hey","hie"],
+        "name":["My name is HD"],
+        "age":["I am 17years old","I am 17"],
+        "class":["I am in 10th grade","10<sup>th</sup>class"],
+        "good":["Thanks","Thx"],
+        "ok":["ok","oka"],
+        "fav_genre":["My favourite genre are: Nu-Metal,Pop,and little bit of rapping."],
+        "fav_song":["My favourite songs are:Counting stars,Numb,Crawling,Lost.Godzilla"],
+        "hru":["I am good","I am fine","decent","I am ok","I am great"],
+        "wyd":["nothing much"],
+        "lmao":["lol","XD","lmao","lmfao"],
+        "eh":["eh","uh",".-.","._.",":/",":\\"]
+    }
+}

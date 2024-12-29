@@ -1,0 +1,37 @@
+@media (min-width: 200px) and (max-width:605px){
+    div.profile{
+        top:200px;
+    }
+    div#picture{
+        height:150px;
+        width:150px;
+    }
+    div.msg{
+        width:70%;
+        max-width:90%;
+    }
+    div#msg_bar input{
+        width:60vw;
+    }
+}
+@media (min-width:606px) and (max-width:800px){
+    div#msg_bar input{
+        width: 70vw;
+    }
+}
+@media only screen and (max-height: 530px){
+    section#container{
+        height:70vh;
+    }
+}
+@media only screen and (max-height: 440px){
+    section#container{
+        height:60vh;
+    }
+    button.sent{
+        width:50px;
+    }
+    button.spotify{
+        width:60px;
+    }
+}
