@@ -116,7 +116,7 @@
         },
         "hru":{
             "keywords":["hry","hru","how","you","hud","hyd"],
-            "required":["hry","hru","doing","hud"],
+            "required":["hry","hru","doing","hud","hyd"],
             "negative":[],
             "special":0
         },
