@@ -85,6 +85,11 @@
             "required":["fav","favourite","genre","type"],
             "negative":[]
         },
+        "fav_artists":{
+            "keywords":["artist","music","song"],
+            "required":["artist"],
+            "negative":[]
+        },
         "fav_song":{
             "keywords":["song","music"],
             "required":["fav","favourite","like","love"],
@@ -92,12 +97,12 @@
         },
         "hru":{
             "keywords":["hry","hru","how","you","hud","hyd"],
-            "required":[],
+            "required":["hry","hru","doing","hud"],
             "negative":[]
         },
         "wyd":{
-            "keywords":["wyd","wud","what","you","doing"],
-            "required":[],
+            "keywords":["wyd","wud","what","you","doing","sup"],
+            "required":["doing","wyd","wud","sup"],
             "negative":[]
         },
         "lmao":{
@@ -108,11 +113,6 @@
         "eh":{
             "keywords":["eh","uh",".-.","._.",":/",":\\","bru","bruh","huh"],
             "required":[],
-            "negative":[]
-        },
-        "fav_artists":{
-            "keywords":["artist","music","song"],
-            "required":["artist","fav","favourite"],
             "negative":[]
         },
         "height":{
