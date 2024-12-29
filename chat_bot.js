@@ -210,8 +210,6 @@ function msg_certainity(msg,question_arr,required=[],negative=[],special=0){
             if(required.includes(msg[x])||check_validity(msg[x],required)){
                 bool=true;
                 messageCounter+=100;
-            }else{
-                messageCounter=-1;
             }
         }
         if(!(bool)){messageCounter=0;}
@@ -242,7 +240,7 @@ async function get_resp(msg){
     for(let x in q_keys){
         r[q_keys[x]]=msg_certainity(msg,q[q_keys[x]].keywords,q[q_keys[x]].required,q[q_keys[x]].negative,q[q_keys[x]].special);
     }
-    console.log(r);
+    alert(lp(r));
     let values=Object.values(r);
     //get max
     let max=Math.max(...values);
