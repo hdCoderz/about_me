@@ -157,7 +157,7 @@
         },
         "day":{
             "keywords":["day","is","today","tdy","what","now"],
-            "required":["is"],
+            "required":["day"],
             "negative":[]
         }
     },
