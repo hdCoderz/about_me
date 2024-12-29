@@ -6,7 +6,7 @@ const gk={
 };
 const replace_txt=["<",">","hd's"];
 const rtr=["&lt;","&gt;","your"];
-const math_allowed=["1","2","3","4","5","6","7","8","9","10","+","/","*","-",".",")","(","[","]","{","}"];
+const math_allowed=["1","2","3","4","5","6","7","8","9","0","+","/","*","-",".",")","(","[","]","{","}"];
 const unknown=["I don't know","?","What","I have no idea"];
 const img={
     user:"images/a.gif",
@@ -197,18 +197,16 @@ function msg_certainity(msg,question_arr,required=[],negative=[]){
         let bool=false;
         for(let x in msg){
             if(required.includes(msg[x])){
-                console.log(true);
                 bool=true;
                 break;
             }
         }
-        if(bool==false){console.log("ok");messageCounter=0;}
+        if(bool==false){messageCounter=0;}
     }
     console.log(messageCounter);
     if(!(negative.length==0)){
         for(let x in msg){
             if(negative.includes(msg[x])){
-                console.log("nice");
                 messageCounter=0;
                 break;
             }
