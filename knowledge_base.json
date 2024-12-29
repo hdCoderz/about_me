@@ -156,7 +156,7 @@
             "negative":[]
         },
         "day":{
-            "keywords":["day","is","today","tdy","what","now"],
+            "keywords":["day","today","tdy","what","now"],
             "required":["day"],
             "negative":[]
         }
