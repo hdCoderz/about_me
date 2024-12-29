@@ -198,11 +198,10 @@ function msg_certainity(msg,question_arr,required=[],negative=[]){
         for(let x in msg){
             if(required.includes(msg[x])){
                 bool=true;
-                console.log(bool,msg,msg[x]);
                 break;
             }
         }
-        if(!bool){messageCounter=0;}
+        if(bool==false){messageCounter=0;}
     }
     if(!(negative.length==0)){
         for(let x in msg){
