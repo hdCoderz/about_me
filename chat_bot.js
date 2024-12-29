@@ -198,6 +198,7 @@ function msg_certainity(msg,question_arr,required=[],negative=[]){
         for(let x in msg){
             if(required.includes(msg[x])){
                 bool=true;
+                console.log(bool,msg,msg[x]);
                 break;
             }
         }
