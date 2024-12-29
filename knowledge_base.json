@@ -197,8 +197,27 @@
             "required":[],
             "negative":[],
             "special":0
+        },
+        "goodbye":{
+            "keywords":["bye","see","you","soon","gtg","gotta","go","cya","goodbye"],
+            "required":[],
+            "negative":[],
+            "special":1
+        },
+        "sad":{
+            "keywords":["aw","sad","ill","sadge","upset","cry","crying","bad","good","worst","worse","dead","unhappy","fucked","messed","mess","angry","anger","died","die"],
+            "required":[],
+            "negative":[],
+            "special":1
+        },
+        "wlcm":{
+            "keywords":["ty","thank","tyt","tysm","thx","tanks","thbkyu"],
+            "required":[],
+            "negative":[],
+            "special":0
         }
     },
+    
     "response":{
         "hd":["I am HD.<br>Nice to meet you. I am 17years old and I like programming"],
         "what_are_you":["I am just a Non-AI chatbot with limited to responses related to about HD."],
@@ -232,6 +251,9 @@
         "year":["!year"],
         "day":["!day"],
         "today":["!today"],
-        "uwu":["uwu","owo","umu"]
+        "uwu":["uwu","owo","umu"],
+        "goodbye":["cya","bye","goodbye","See ya soon","cya later"],
+        "sad":["aw man I hope for the best gws<br> Everything will be fine so dw"],
+        "wlcm":["welcome","np"]
     }
 }
