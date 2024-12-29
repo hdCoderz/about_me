@@ -182,38 +182,53 @@ function filter(txt){
         return [txt];
     }
 }
-function msg_certainity(msg,question_arr,required=[],negative=[]){
+function check_validity(txt,match_arr){
+    let ot=txt;
+    txt=txt.replace(/(s)$/,"");
+    if(match_arr.includes(txt)){
+        return true;
+    }
+    ot=ot.replace(/(es)$/,"");
+    if(match_arr.includes(ot)){
+        return true;
+    }
+    return false;
+}
+function msg_certainity(msg,question_arr,required=[],negative=[],special=0){
     let percentage;
     msg=filter(msg);
     let arr_len=question_arr.length;
     let messageCounter=0;
     for(let x in msg){
-        if(question_arr.includes(msg[x])){
+        if(question_arr.includes(msg[x])||check_validity(msg[x],question_arr)){
             messageCounter+=1;
         }
     }
-    
     if(!(required.length==0)){
-        let bool=false;
+        var bool=false;
         for(let x in msg){
-            if(required.includes(msg[x])){
+            if(required.includes(msg[x])||check_validity(msg[x],required)){
                 bool=true;
-                break;
+                messageCounter+=100;
+            }else{
+                messageCounter=-1;
             }
         }
-        if(bool==false){messageCounter=0;}
+        if(!(bool)){messageCounter=0;}
     }
-    console.log(messageCounter);
+    if(!(special==1)){
+        negative.push("my");
+    }
     if(!(negative.length==0)){
         for(let x in msg){
-            if(negative.includes(msg[x])){
+            if(negative.includes(msg[x])||check_validity(msg[x],negative)){
                 messageCounter=0;
                 break;
             }
         }
     }
     percentage=parseFloat(messageCounter);
-    return (percentage*100);
+    return (percentage);
 }
 async function get_resp(msg){
     let alu_val=alu(msg);
@@ -225,8 +240,9 @@ async function get_resp(msg){
         //name:msg_certainity(msg,q.name["keywords"],q.name["required"]),
     };
     for(let x in q_keys){
-        r[q_keys[x]]=msg_certainity(msg,q[q_keys[x]].keywords,q[q_keys[x]].required,q[q_keys[x].negative]);
+        r[q_keys[x]]=msg_certainity(msg,q[q_keys[x]].keywords,q[q_keys[x]].required,q[q_keys[x]].negative,q[q_keys[x]].special);
     }
+    console.log(r);
     let values=Object.values(r);
     //get max
     let max=Math.max(...values);

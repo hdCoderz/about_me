@@ -3,162 +3,200 @@
         "hd":{
             "keywords":["who","hd","intro"],
             "required":["hd"],
-            "negative":[]
+            "negative":[],
+            "special":0
         },
         "what_are_you":{
             "keywords":["what","you","about","intro","who"],
-            "required":["you"],
-            "negative":[]
+            "required":["who","about"],
+            "negative":[],
+            "special":0
         },
         "greetings":{
             "keywords":["hi","hello","hlo","halo","ola","hey","hie","bonjour","konichiwa","jumbo","namaste","ram"],
             "required":[],
-            "negative":[]
+            "negative":[],
+            "special":0
         },
         "name":{
             "keywords":["name"],
             "required":["your"],
-            "negative":[]
+            "negative":[],
+            "special":0
         },
         "age":{
             "keywords":["what","how","age","old"],
             "required":["old","age"],
-            "negative":[]
+            "negative":[],
+            "special":0
         },
         "class":{
             "keywords":["class","grade"],
             "required":[],
-            "negative":[]
+            "negative":[],
+            "special":0
         },
         "country":{
             "keywords":["where","you","from","belong","country","citizen","nation"],
-            "required":["you","hd"],
-            "negative":[]
+            "required":["country","hd","nation","citizen","belong"],
+            "negative":[],
+            "special":0
         },
         "hobby":{
             "keywords":["hobby","what","hobbies","interested","like"],
             "required":["things","hobby","hobbies"],
-            "negative":[]
+            "negative":[],
+            "special":0
         },
         "color":{
-            "keywords":["fav","favourite","color"],
-            "required":["color"],
-            "negative":[]
+            "keywords":["fav","favourite","color","colour"],
+            "required":["color","colour"],
+            "negative":[],
+            "special":0
         },
         "chess":{
             "keywords":["what","elo"],
             "required":["elo"],
-            "negative":[]
+            "negative":[],
+            "special":0
         },
         "chess_plat":{
             "keywords":["chess","play","platform","website","where"],
             "required":["chess"],
-            "negative":[]
+            "negative":[],
+            "special":0
         },
         "socials":{
             "keywords":["media","social","insta","instagram","discord","spotify","dc","yt","youtube"],
             "required":[],
-            "negative":[]
+            "negative":[],
+            "special":0
         },
         "state":{
             "keywords":["which","state","province","part"],
             "required":["part","state","province"],
-            "negative":[]
+            "negative":[],
+            "special":0
         },
         "lang":{
             "keywords":["what","lang","you","know","speak"],
-            "required":["you"],
-            "negative":[]
+            "required":["lang"],
+            "negative":[],
+            "special":0
         },
         "good":{
             "keywords":["you","good","like","gtk","glad","gth","smart","handsome","beautiful","love","nice","cute","noice","gud","great","gr8","awesome","fine","fantastic","wow","woah"],
             "required":[],
-            "negative":[]
+            "negative":[],
+            "special":0
         },
         "ok":{
             "keywords":["decent","ok","oka","k"],
             "required":[],
-            "negative":[]
+            "negative":[],
+            "special":0
         },
         "fav_genre":{
             "keywords":["genre","music","song"],
-            "required":["fav","favourite","genre","type"],
-            "negative":[]
+            "required":["genre","type"],
+            "negative":[],
+            "special":0
         },
         "fav_artists":{
             "keywords":["artist","music","song"],
             "required":["artist"],
-            "negative":[]
+            "negative":[],
+            "special":0
         },
         "fav_song":{
             "keywords":["song","music"],
-            "required":["fav","favourite","like","love"],
-            "negative":[]
+            "required":["song","music"],
+            "negative":[],
+            "special":0
         },
         "hru":{
             "keywords":["hry","hru","how","you","hud","hyd"],
             "required":["hry","hru","doing","hud"],
-            "negative":[]
+            "negative":[],
+            "special":0
         },
         "wyd":{
             "keywords":["wyd","wud","what","you","doing","sup"],
             "required":["doing","wyd","wud","sup"],
-            "negative":[]
+            "negative":[],
+            "special":0
         },
         "lmao":{
             "keywords":["lol","XD","lmao","lmfao"],
             "required":[],
-            "negative":[]
+            "negative":[],
+            "special":0
         },
         "eh":{
             "keywords":["eh","uh",".-.","._.",":/",":\\","bru","bruh","huh"],
             "required":[],
-            "negative":[]
+            "negative":[],
+            "special":0
         },
         "height":{
             "keywords":["what","your","height"],
-            "required":["your"],
-            "negative":[]
+            "required":["height"],
+            "negative":[],
+            "special":0
         },
         "time":{
             "keywords":["time","what","now","rn","right"],
             "required":["time"],
-            "negative":[]
+            "negative":[],
+            "special":0
         },
         "date":{
             "keywords":["what","date","today"],
-            "required":["date","dates"],
-            "negative":[]
+            "required":["date"],
+            "negative":[],
+            "special":0
         },
         "weeks":{
             "keywords":["name","mention","all","week"],
-            "required":["week","weeks"],
-            "negative":["which"]
+            "required":["week"],
+            "negative":["which"],
+            "special":0
         },
         "months":{
             "keywords":["name","mention","all","month"],
-            "required":["month","months"],
-            "negative":["which"]
+            "required":["month"],
+            "negative":["which"],
+            "special":0
         },
         "today":{
             "keywords":["today","tdy","what","date"],
             "required":["today","tdy"],
-            "negative":[]
+            "negative":["which"],
+            "special":0
         },
         "month":{
-            "keywords":["month","what","now","which"],
+            "keywords":["month","what","now"],
             "required":["month"],
-            "negative":[]
+            "negative":[],
+            "special":0
         },
         "year":{
             "keywords":["what","year","right","now","today","tdy","yr"],
             "required":["year","yr"],
-            "negative":[]
+            "negative":[],
+            "special":0
         },
         "day":{
             "keywords":["day","today","tdy","what","now"],
             "required":["day"],
-            "negative":[]
+            "negative":[],
+            "special":0
+        },
+        "uwu":{
+            "keywords":["uwu","owo","iwi","umu"],
+            "required":[],
+            "negative":[],
+            "special":0
         }
     },
     "response":{
@@ -193,6 +231,7 @@
         "months":["!month_names"],
         "year":["!year"],
         "day":["!day"],
-        "today":["!today"]
+        "today":["!today"],
+        "uwu":["uwu","owo","umu"]
     }
 }
