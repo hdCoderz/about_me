@@ -6,7 +6,7 @@ const gk={
 };
 const replace_txt=["<",">","hd's"];
 const rtr=["&lt;","&gt;","your"];
-const math_allowed=["1","2","3","4","5","6","7","8","9","0","+","/","*","-",".",")","(","[","]","{","}"];
+const math_allowed=["1","2","3","4","5","6","7","8","9","0","+","/","*","-","."];//")","(","[","]","{","}"];
 const unknown=["I don't know","?","What","I have no idea"];
 const img={
     user:"images/a.gif",
@@ -166,7 +166,7 @@ async function json_read(file){
 }
 function replace_txts(txt){
     for(let x in replace_txt){
-        if(txt.includes(rtr[x])){
+        if(txt.includes(replace_txt[x])){
             txt=txt.replaceAll(replace_txt[x],rtr[x]);
         }
     }
