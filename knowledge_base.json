@@ -19,7 +19,7 @@
             "special":0
         },
         "name":{
-            "keywords":["name"],
+            "keywords":["name","your"],
             "required":["your"],
             "negative":[],
             "special":0
@@ -37,7 +37,7 @@
             "special":0
         },
         "country":{
-            "keywords":["where","you","from","belong","country","citizen","nation"],
+            "keywords":["where","from","belong","country","citizen","nation"],
             "required":["country","hd","nation","citizen","belong"],
             "negative":[],
             "special":0
@@ -79,13 +79,13 @@
             "special":0
         },
         "lang":{
-            "keywords":["what","lang","you","know","speak"],
-            "required":["lang"],
+            "keywords":["what","lang","you","know","speak","language"],
+            "required":["lang","language"],
             "negative":[],
             "special":0
         },
         "good":{
-            "keywords":["you","good","like","gtk","glad","gth","smart","handsome","beautiful","love","nice","cute","noice","gud","great","gr8","awesome","fine","fantastic","wow","woah"],
+            "keywords":["good","like","gtk","glad","gth","smart","handsome","beautiful","love","nice","cute","noice","gud","great","gr8","awesome","fine","fantastic","wow","woah"],
             "required":[],
             "negative":[],
             "special":0
@@ -109,7 +109,7 @@
             "special":0
         },
         "fav_song":{
-            "keywords":["song","music"],
+            "keywords":["song","music","favourite","fav"],
             "required":["song","music"],
             "negative":[],
             "special":0
