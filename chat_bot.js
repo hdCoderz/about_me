@@ -215,7 +215,7 @@ function msg_certainity(msg,question_arr,required=[],negative=[],special=0){
         if(!(bool)){messageCounter=0;}
     }
     if(!(special==1)){
-        negative.push("my");
+        negative.push("my","mine","me","his","her","them");
     }
     if(!(negative.length==0)){
         for(let x in msg){
