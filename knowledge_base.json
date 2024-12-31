@@ -19,7 +19,7 @@
             "quick_resp":0
         },
         "greetings":{
-            "keywords":["hi","hello","hlo","halo","ola","hey","hie","bonjour","konichiwa","jumbo","namaste","ram","sis","sister"],
+            "keywords":["hi","hello","hlo","halo","ola","hey","hie","bonjour","konichiwa","jumbo","namaste","ram"],
             "required":[],
             "negative":[],
             "special":0,
@@ -379,7 +379,7 @@
             "quick_resp":0
         },
         "no":{
-            "keywords":["dumb","idiot","stupid","moron","coward","trash"],
+            "keywords":["dumb","behen","sista","sister","sis","idiot","stupid","moron","coward","trash"],
             "required":[],
             "negative":[],
             "special":0,
