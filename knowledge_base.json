@@ -19,7 +19,7 @@
             "quick_resp":0
         },
         "greetings":{
-            "keywords":["hi","hello","hlo","halo","ola","hey","hie","bonjour","konichiwa","jumbo","namaste","ram"],
+            "keywords":["hi","hello","hlo","halo","ola","hey","hie","bonjour","konichiwa","jumbo","namaste","ram","sis","sister"],
             "required":[],
             "negative":[],
             "special":0,
@@ -343,7 +343,7 @@
             "quick_resp":1
         },
         "same":{
-            "keywords":["damn","dam","aw","mew","meow","woof","yes","no","fr","real","riyal","reak","greeting","o","oh","anyway","hm","hmm","hmmm","hmmph","hmph","sigh","moo","oink","quack","ass","trash","mf","mf-","bsdk","bc","shit","fuck","bitch"],
+            "keywords":["damn","dam","aw","shut up","shit up","mew","meow","woof","yes","no","fr","real","riyal","reak","greeting","o","oh","anyway","hm","hmm","hmmm","hmmph","hmph","sigh","moo","oink","quack","ass","trash","mf","mf-","bsdk","bc","shit","fuck","bitch","bro","brother","bhai","no one asked","who asked"],
             "required":[],
             "negative":[],
             "special":0,
@@ -384,6 +384,33 @@
             "negative":[],
             "special":0,
             "match_sen":["give me your whatsapp","your phone number","your phone no.","are you dumb","are you trash"],
+            "negative_sen":[],
+            "quick_resp":0
+        },
+        "pronouns":{
+            "keywords":["pronoun","refer","boy","girl","man","boy","gender"],
+            "required":[],
+            "negative":[],
+            "special":0,
+            "negative_sen":[],
+            "match_sen":["are you a boy","are you a girl","you are a girl","you are a boy","are you a he","are you a she","are you they/them","what is your gender","what is your sex"],
+            "quick_resp":0
+        },
+        "nicknames":{
+            "keywords":["han","fhd"],
+            "required":[],
+            "negative":[],
+            "special":0,
+            "match_sen":["hard disk","hot dog","hot dawg","high definition","high defination","hot dosa","hard drive","hot daughter","hot doctor","howling doctor","echdi","eychdi","aychdi","dog pfp","samoyed pfp","white dog",".hd__","4k","8k","16k"],
+            "negative_sen":[],
+            "quick_resp":0
+        },
+        "yes":{
+            "keywords":["straight","str8","friend","frnd"],
+            "required":[],
+            "negative":[],
+            "special":0,
+            "match_sen":["are you straight","you are straight","are you he/him","are you HD","are you my friend","are you my frnd"],
             "negative_sen":[],
             "quick_resp":0
         }
@@ -432,6 +459,9 @@
         "fav_g":["I play only minecraft,world box sometimes"],
         "appreciate":["nice","noice","epik","epic"],
         "fav_yt":["My favourite youtubers are:beast boy shubh,magic monkey,Rail gyankosh etc"],
-        "no":["No","nope"]
+        "no":["No","nope"],
+        "pronouns":["If you are asking my pronouns I am he/him"],
+        "nicknames":["Hello someone I know","Hi someone whom I am familiar with"],
+        "yes":["yes"]
     }
 }
