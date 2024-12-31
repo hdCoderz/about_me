@@ -63,6 +63,15 @@
             "negative_sen":[],
             "quick_resp":0
         },
+        "birthday":{
+            "keywords":["dob","birth","birthday","when"],
+            "required":["dob","birthday","bday"],
+            "negative":[],
+            "special":0,
+            "match_sen":["when is your birthday","when is your bday"],
+            "negative_sen":[],
+            "quick_resp":0
+        },
         "hobby":{
             "keywords":["hobby","what","hobbies","interested","like","thing"],
             "required":["thing","hobby","hobbies"],
@@ -131,7 +140,7 @@
             "required":[],
             "negative":[],
             "special":0,
-            "match_sen":["same to you","likewise","you too","same for you","u too","happy new year","merry christmas","happy birthday","congratulations","congrats"],
+            "match_sen":["same to you","likewise","you too","same for you","u too","happy new year","merry christmas","happy birthday","congratulations","congrats","happy bday"],
             "negative_sen":[],
             "quick_resp":0
         },
@@ -474,6 +483,7 @@
         "gf":["No one","Nobody"],
         "rs":["I am single"],
         "same":["!same"],
+        "birthday":["My birthday is on 5th Jan"],
         "fav_g":["I play only minecraft,world box sometimes"],
         "appreciate":["nice","noice","epik","epic"],
         "fav_yt":["My favourite youtubers are:beast boy shubh,magic monkey,Rail gyankosh etc"],
