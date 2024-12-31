@@ -352,7 +352,7 @@
             "quick_resp":1
         },
         "same":{
-            "keywords":["damn","fs","dam","aw","shut","mew","meow","woof","yes","no","fr","real","riyal","reak","greeting","o","oh","anyway","hm","hmm","hmmm","hmmph","hmph","sigh","moo","oink","quack","ass","trash","mf","mf-","bsdk","bc","shit","fuck","bitch","bro","brother","bhai"],
+            "keywords":["damn","copycat","copy","copying","fs","dam","aw","shut","mew","meow","woof","yes","no","fr","real","riyal","reak","greeting","o","oh","anyway","hm","hmm","hmmm","hmmph","hmph","sigh","moo","oink","quack","ass","trash","mf","mf-","bsdk","bc","shit","fuck","bitch","bro","brother","bhai"],
             "required":[],
             "negative":[],
             "special":0,
@@ -483,7 +483,7 @@
         "gf":["No one","Nobody"],
         "rs":["I am single"],
         "same":["!same"],
-        "birthday":["My birthday is on 5th Jan"],
+        "birthday":["My birthday is on 5th Jan (2008)"],
         "fav_g":["I play only minecraft,world box sometimes"],
         "appreciate":["nice","noice","epik","epic"],
         "fav_yt":["My favourite youtubers are:beast boy shubh,magic monkey,Rail gyankosh etc"],
