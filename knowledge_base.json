@@ -127,11 +127,11 @@
             "quick_resp":0
         },
         "good":{
-            "keywords":["good","epik","epic","like","gtk","glad","funny","gth","smart","handsome","beautiful","love","nice","cute","noice","gud","great","gr8","awesome","fine","fantastic","wow","woah","kool","cool"],
+            "keywords":["good","epik","epic","like","gtk","glad","funny","gth","smart","handsome","beautiful","love","nice","cute","noice","gud","great","gr8","gg","awesome","fine","fantastic","wow","woah","kool","cool"],
             "required":[],
             "negative":[],
             "special":0,
-            "match_sen":["same to you","likewise","you too","same for you","u too"],
+            "match_sen":["same to you","likewise","you too","same for you","u too","happy new year","merry christmas","happy birthday","congratulations","congrats"],
             "negative_sen":[],
             "quick_resp":0
         },
