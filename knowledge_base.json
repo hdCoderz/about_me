@@ -28,11 +28,11 @@
             "quick_resp":0
         },
         "name":{
-            "keywords":["name","your"],
+            "keywords":["name","your","irl"],
             "required":["name"],
             "negative":[],
             "special":0,
-            "match_sen":[],
+            "match_sen":["real life","real name"],
             "negative_sen":[],
             "quick_resp":0
         },
