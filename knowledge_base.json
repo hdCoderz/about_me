@@ -144,6 +144,24 @@
             "negative_sen":[],
             "quick_resp":0
         },
+        "goodbye":{
+            "keywords":["bye","see","soon","gtg","gotta","go","cya","goodbye"],
+            "required":[],
+            "negative":[],
+            "special":1,
+            "match_sen":[],
+            "negative_sen":[],
+            "quick_resp":0
+        },
+        "sad":{
+            "keywords":["aw","sad","ill","sadge","upset","cry","crying","bad","good","worst","worse","dead","unhappy","fucked","messed","mess","angry","anger","died","die","depressed","depression","anxiety","anxious","pain","painful","uncomfortable"],
+            "required":[],
+            "negative":[],
+            "special":1,
+            "match_sen":[],
+            "negative_sen":[],
+            "quick_resp":0
+        },
         "ok":{
             "keywords":["decent","ok","oka","k","okay","welcome","wlcm"],
             "required":[],
@@ -302,24 +320,6 @@
             "required":[],
             "negative":[],
             "special":0,
-            "match_sen":[],
-            "negative_sen":[],
-            "quick_resp":0
-        },
-        "goodbye":{
-            "keywords":["bye","see","soon","gtg","gotta","go","cya","goodbye"],
-            "required":[],
-            "negative":[],
-            "special":1,
-            "match_sen":[],
-            "negative_sen":[],
-            "quick_resp":0
-        },
-        "sad":{
-            "keywords":["aw","sad","ill","sadge","upset","cry","crying","bad","good","worst","worse","dead","unhappy","fucked","messed","mess","angry","anger","died","die","depressed","depression","anxiety","anxious","pain","painful","uncomfortable"],
-            "required":[],
-            "negative":[],
-            "special":1,
             "match_sen":[],
             "negative_sen":[],
             "quick_resp":0
