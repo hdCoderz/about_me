@@ -351,6 +351,33 @@
             "negative_sen":[],
             "quick_resp":0
         }
+        "fav_g":{
+            "keywords":["fav","favourite","game","gamer","minecraft","roblox","cod","valorant"],
+            "required":["game","gamer","league","elden"],
+            "negative":[],
+            "special":0,
+            "match_sen":["what's your favourite game","what is your favourite game","what games do you like","what games you play","league of legends","elden rings"],
+            "negative_sen":[],
+            "quick_resp":0
+        },
+        "appreciate":{
+            "keywords":["same"],
+            "required":[],
+            "negative":[],
+            "special":0,
+            "match_sen":["me too","here too"],
+            "negative_sen":[],
+            "quick_resp":0
+        },
+        "fav_yt":{
+            "keywords":["youtuber","fav","favourite"],
+            "required":["youtuber","channel"],
+            "negative":[],
+            "special":0,
+            "match_sen":["who is your favourite youtuber","which youtube channels do you watch"],
+            "negative_sen":[],
+            "quick_resp":0
+        }
     },
     
     "response":{
