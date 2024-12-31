@@ -350,7 +350,7 @@
             "match_sen":["for real","nice to meet you","good morning","good evening","good afternoon","good noon","good evening"," oh"," hm"," mhm","oh no","fuck you","bitchass","motherfucker","chutiya","you suck","get out"],
             "negative_sen":[],
             "quick_resp":0
-        }
+        },
         "fav_g":{
             "keywords":["fav","favourite","game","gamer","minecraft","roblox","cod","valorant"],
             "required":["game","gamer","league","elden"],
