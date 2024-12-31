@@ -343,11 +343,11 @@
             "quick_resp":1
         },
         "same":{
-            "keywords":["damn","dam","aw","mew","meow","woof","yes","no"],
+            "keywords":["damn","dam","aw","mew","meow","woof","yes","no","fr","real","riyal","reak"],
             "required":[],
             "negative":[],
             "special":0,
-            "match_sen":[],
+            "match_sen":["for real"],
             "negative_sen":[],
             "quick_resp":0
         }
