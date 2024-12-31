@@ -343,11 +343,11 @@
             "quick_resp":1
         },
         "same":{
-            "keywords":["damn","dam","aw","mew","meow","woof","yes","no","fr","real","riyal","reak","greeting","o","oh","anyway"],
+            "keywords":["damn","dam","aw","mew","meow","woof","yes","no","fr","real","riyal","reak","greeting","o","oh","anyway","hm"],
             "required":[],
             "negative":[],
             "special":0,
-            "match_sen":["for real","nice to meet you","good morning","good evening","good afternoon","good noon","good evening"," oh"],
+            "match_sen":["for real","nice to meet you","good morning","good evening","good afternoon","good noon","good evening"," oh"," hm "," mhm "],
             "negative_sen":[],
             "quick_resp":0
         }
