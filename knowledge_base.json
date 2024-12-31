@@ -100,7 +100,7 @@
             "quick_resp":0
         },
         "socials":{
-            "keywords":["media","social","insta","instagram","discord","spotify","dc","yt","youtube"],
+            "keywords":["media","social","insta","instagram","discord","spotify","dc","yt","youtube","snapchat","x","twitter","facebook","threads","telegram","whatsapp"],
             "required":[],
             "negative":[],
             "special":0,
@@ -127,7 +127,7 @@
             "quick_resp":0
         },
         "good":{
-            "keywords":["good","like","gtk","glad","funny","gth","smart","handsome","beautiful","love","nice","cute","noice","gud","great","gr8","awesome","fine","fantastic","wow","woah","kool","cool"],
+            "keywords":["good","epik","epic","like","gtk","glad","funny","gth","smart","handsome","beautiful","love","nice","cute","noice","gud","great","gr8","awesome","fine","fantastic","wow","woah","kool","cool"],
             "required":[],
             "negative":[],
             "special":0,
@@ -377,6 +377,15 @@
             "match_sen":["who is your favourite youtuber","which youtube channels do you watch"],
             "negative_sen":[],
             "quick_resp":0
+        },
+        "no":{
+            "keywords":["dumb","idiot","stupid","moron","coward","trash"],
+            "required":[],
+            "negative":[],
+            "special":0,
+            "match_sen":["give me your whatsapp","your phone number","your phone no.","are you dumb","are you trash"],
+            "negative_sen":[],
+            "quick_resp":0
         }
     },
     
@@ -404,7 +413,7 @@
         "chess_plat":["I play chess on chess.com"],
         "state":["I am from JH","I am from eastern part of India"],
         "lang":["I know two languages:<OL><LI>Hindi(native)</LI><LI>English</LI></OL><br>I am learning french as well."],
-        "socials":["I am on discord with username: .hd__.<br>I am on spotify and discord only.<br>I deleted my insta account."],
+        "socials":["I am on discord with username: .hd__.<br>I am on whatsapp,spotify and discord only.<br>I deleted my insta account."],
         "date":["!date"],
         "weeks":["!week_names"],
         "time":["!time"],
@@ -419,6 +428,10 @@
         "wlcm":["welcome","np"],
         "gf":["No one","No body"],
         "rs":["I am single"],
-        "same":["!same"]
+        "same":["!same"],
+        "fav_g":["I play only minecraft,world box sometimes"],
+        "appreciate":["nice","noice","epik","epic"],
+        "fav_yt":["My favourite youtubers are:beast boy shubh,magic monkey,Rail gyankosh etc"],
+        "no":["No","nope"]
     }
 }
