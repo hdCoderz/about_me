@@ -7,7 +7,7 @@ const gk={
 const replace_txt=["<",">","?",".","&","!",",",":",";"];
 const rtr=["&lt;","&gt;","","","","","","",""];
 const math_allowed=["1","2","3","4","5","6","7","8","9","0","+","/","*","-","."];//")","(","[","]","{","}"];
-const unknown=["I don't know.I am just a chatbot to give basic info related to HD<br>Ask me simple questions."];
+const unknown=["I don't know the answer of this question/prompt.<br>Can you provide more simple questions?<p style=\"color:red;font-family:monospace;\">This happened due to no information available in database</p>"];
 const img={
     user:"images/a.gif",
     pfp:"images/pfp.jpg"
