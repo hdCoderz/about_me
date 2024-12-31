@@ -2,7 +2,7 @@
     "questions":{
         "hd":{
             "keywords":["who","hd","intro","introduction"],
-            "required":["hd","introduction","intro"],
+            "required":["introduction","intro"],
             "negative":[],
             "special":0,
             "match_sen":[],
@@ -343,11 +343,11 @@
             "quick_resp":1
         },
         "same":{
-            "keywords":["damn","dam","aw","mew","meow","woof","yes","no","fr","real","riyal","reak"],
+            "keywords":["damn","dam","aw","mew","meow","woof","yes","no","fr","real","riyal","reak","greeting"],
             "required":[],
             "negative":[],
             "special":0,
-            "match_sen":["for real"],
+            "match_sen":["for real","nice to meet you","good morning","good evening","good afternoon","good noon","good evening"],
             "negative_sen":[],
             "quick_resp":0
         }
