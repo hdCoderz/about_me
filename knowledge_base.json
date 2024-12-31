@@ -136,7 +136,7 @@
             "quick_resp":0
         },
         "ok":{
-            "keywords":["decent","ok","oka","k","okay"],
+            "keywords":["decent","ok","oka","k","okay","welcome","wlcm"],
             "required":[],
             "negative":[],
             "special":0,
