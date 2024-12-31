@@ -140,7 +140,7 @@
             "required":[],
             "negative":[],
             "special":0,
-            "match_sen":["i see","i c","oll korrect"],
+            "match_sen":["i see","i c","oll korrect","not yet","not here","still 2024","not 2025","yet to come","still December","still 31st Dec"],
             "negative_sen":[],
             "quick_resp":0
         },
