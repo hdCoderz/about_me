@@ -64,7 +64,7 @@
             "quick_resp":0
         },
         "birthday":{
-            "keywords":["dob","birth","birthday","when"],
+            "keywords":["dob","birth","birthday","when","born"],
             "required":["dob","birthday","bday"],
             "negative":[],
             "special":0,
