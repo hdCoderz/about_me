@@ -131,7 +131,7 @@
             "required":[],
             "negative":[],
             "special":0,
-            "match_sen":[],
+            "match_sen":["same to you","likewise","you too","same for you","u too"],
             "negative_sen":[],
             "quick_resp":0
         },
