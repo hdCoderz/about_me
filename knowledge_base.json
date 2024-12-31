@@ -56,10 +56,10 @@
         },
         "country":{
             "keywords":["where","from","belong","country","citizen","nation"],
-            "required":["country","nation","citizen","belong"],
+            "required":["country","nation","citizen","belong","live","from","reside"],
             "negative":[],
             "special":0,
-            "match_sen":[],
+            "match_sen":["where are you from","where do you live","what place you live","where do you reside"],
             "negative_sen":[],
             "quick_resp":0
         },
