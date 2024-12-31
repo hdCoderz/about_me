@@ -33,7 +33,7 @@
             "negative":[],
             "special":0,
             "match_sen":["real life","real name"],
-            "negative_sen":[],
+            "negative_sen":["what is my name","what's my name","you know my name","tell my name","say my name"],
             "quick_resp":0
         },
         "age":{
@@ -56,7 +56,7 @@
         },
         "country":{
             "keywords":["where","from","belong","country","citizen","nation"],
-            "required":["country","hd","nation","citizen","belong"],
+            "required":["country","nation","citizen","belong"],
             "negative":[],
             "special":0,
             "match_sen":[],
@@ -82,8 +82,8 @@
             "quick_resp":0
         },
         "chess":{
-            "keywords":["what","elo"],
-            "required":["elo"],
+            "keywords":["what","elo","rating","level","lvl"],
+            "required":["elo","rating","chess"],
             "negative":[],
             "special":0,
             "match_sen":[],
@@ -210,7 +210,7 @@
         "height":{
             "keywords":["what","your","height"],
             "required":["height"],
-            "negative":[],
+            "negative":["my"],
             "special":0,
             "match_sen":[],
             "negative_sen":[],
