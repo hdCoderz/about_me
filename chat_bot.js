@@ -244,7 +244,8 @@ function msg_certainity(msg,question_arr,required=[],negative=[],special,match_s
             if(!(bool)){messageCounter=0;}
         }
         if(!(special==1)){
-            negative.push("my","mine","me","his","her","them");
+            //negative.push("my","mine","me","his","her","them");
+            console.log("ok");
         }
         if(!(negative.length==0)){
             for(let x in msg){
