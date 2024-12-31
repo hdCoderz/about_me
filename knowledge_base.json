@@ -16,7 +16,7 @@
             "special":0,
             "match_sen":["what are you","who are you","are you a robot","ai chatbot"," chatbot "],
             "negative_sen":[],
-            "quick_resp":1
+            "quick_resp":0
         },
         "greetings":{
             "keywords":["hi","hello","hlo","halo","ola","hey","hie","bonjour","konichiwa","jumbo","namaste","ram"],
