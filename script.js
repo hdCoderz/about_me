@@ -1,4 +1,5 @@
 function on_load(){
+    alert("Note: Bot may repeat your sentences so if it says something inappropriate it will be not our responsibility");
     /*let anim=sessionStorage.getItem("anim");
     if(!(anim=="1")){
         sessionStorage.setItem("anim","1");
