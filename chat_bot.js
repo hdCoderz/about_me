@@ -244,8 +244,7 @@ function msg_certainity(msg,question_arr,required=[],negative=[],special,match_s
             if(!(bool)){messageCounter=0;}
         }
         if(!(special==1)){
-            //negative.push("my","mine","me","his","her","them");
-            console.log("ok");
+            negative.push("nigg","kys","kill","niga","pussy","dick","penis","cock","fag","porn","sex","intercourse","masterbate","masterbating","sexing","racist","racism","sexist","nazi","nazism","jew","muslim","hindu","buddhist","christian","monkey");
         }
         if(!(negative.length==0)){
             for(let x in msg){
