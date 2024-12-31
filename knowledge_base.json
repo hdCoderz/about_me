@@ -65,7 +65,7 @@
         },
         "birthday":{
             "keywords":["dob","birth","birthday","when","born"],
-            "required":["dob","birthday","bday"],
+            "required":["dob","birthday","bday","born","birth"],
             "negative":[],
             "special":0,
             "match_sen":["when is your birthday","when is your bday"],
