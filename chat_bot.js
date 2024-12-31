@@ -4,10 +4,10 @@ const gk={
     week_names:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
     month_names:["January","February","March","April","May","June","July","August","September","October","November","December"]
 };
-const replace_txt=["<",">","hd's"];
-const rtr=["&lt;","&gt;","your"];
+const replace_txt=["<",">","?",".","&","!",",",":",";"];
+const rtr=["&lt;","&gt;","","","","","","",""];
 const math_allowed=["1","2","3","4","5","6","7","8","9","0","+","/","*","-","."];//")","(","[","]","{","}"];
-const unknown=["I don't know","?","What","I have no idea"];
+const unknown=["I don't know.I am just a chatbot to give basic info related to HD<br>Ask me simple questions."];
 const img={
     user:"images/a.gif",
     pfp:"images/pfp.jpg"
@@ -50,13 +50,13 @@ function lp(arr){
     }
     return r;
 }
-function check_for_commands(txt){
+function check_for_commands(txt,usr_msg){
     const prefix="!";
     if(txt.startsWith(prefix)){
         txt=txt.replace("!","");
         //commands
         const cmd=new Cmd();
-        const commands=["today","month","day","date","week_names","month_names","time","year"];
+        const commands=["today","month","day","date","week_names","month_names","time","year","same"];
         if(txt==commands[0]){
             return cmd.date();
         }else if(txt==commands[1]){
@@ -73,7 +73,10 @@ function check_for_commands(txt){
             return cmd.time();
         }else if(txt==commands[7]){
             return cmd.year();
-        }else{
+        }else if(txt==commands[8]){
+            return usr_msg;
+        }
+        else{
             return false;
         }
     }else{
@@ -90,10 +93,8 @@ function msg_display(type,txt,img,align="left",name="HD"){
     }
     obj.section.classList.add("msg_section");
     obj["msg"].classList.add("msg");
-    obj["msg"].innerHTML=txt;
     obj["name"].innerHTML=name;
     obj["profile"].classList.add("p");
-    obj["msg_box"].classList.add("grid");
     obj["pfp"].classList.add("pfp");
     obj.pfp.style.backgroundImage=`url('${img}')`;
     obj["profile"].appendChild(obj.pfp);
@@ -104,6 +105,13 @@ function msg_display(type,txt,img,align="left",name="HD"){
     if(align=="right"){
         obj.msg_box.style.marginLeft="50%";
         obj.msg_box.style.marginRight="10px";
+        obj["msg_box"].classList.add("grid");
+        obj["msg"].innerText=txt;
+        obj["msg"].classList.add("user_msg");
+    }else{
+        obj["msg"].innerHTML=txt;
+        obj["msg"].classList.add("bot_msg");
+        obj["msg_box"].classList.add("flex");
     }
     obj.section.appendChild(obj.msg_box);
     parent.appendChild(obj.section);
@@ -172,14 +180,18 @@ function replace_txts(txt){
     }
     return txt;
 }
-function filter(txt){
+function filter(txt,enabled=true){
     txt=txt.toLowerCase();
     txt=replace_txts(txt);
-    if(txt.includes(" ")){
-        txt=txt.split(" ");
-        return txt;
+    if(enabled){
+        if(txt.includes(" ")){
+            txt=txt.split(" ");
+            return txt;
+        }else{
+            return [txt];
+        }
     }else{
-        return [txt];
+        return txt;
     }
 }
 function check_validity(txt,match_arr){
@@ -194,39 +206,56 @@ function check_validity(txt,match_arr){
     }
     return false;
 }
-function msg_certainity(msg,question_arr,required=[],negative=[],special=0){
+function msg_certainity(msg,question_arr,required=[],negative=[],special,match_sen=[],negative_sen=[],quick_resp){
     let percentage;
-    msg=filter(msg);
-    let arr_len=question_arr.length;
     let messageCounter=0;
-    for(let x in msg){
-        if(question_arr.includes(msg[x])||check_validity(msg[x],question_arr)){
-            messageCounter+=1;
-        }
-    }
-    if(!(required.length==0)){
-        var bool=false;
-        for(let x in msg){
-            if(required.includes(msg[x])||check_validity(msg[x],required)){
-                bool=true;
-                messageCounter+=100;
+    let msg2=msg;
+    msg2=filter(msg2,false);
+    if(!(match_sen==0)){
+        for(let x in match_sen){
+            if(msg2.includes(match_sen[x])){
+                messageCounter+=700;
             }
         }
-        if(!(bool)){messageCounter=0;}
     }
-    if(!(special==1)){
-        negative.push("my","mine","me","his","her","them");
-    }
-    if(!(negative.length==0)){
-        for(let x in msg){
-            if(negative.includes(msg[x])||check_validity(msg[x],negative)){
+    if(!(negative_sen==0)){
+        for(let x in negative_sen){
+            if(msg2.includes(negative_sen[x])){
                 messageCounter=0;
                 break;
             }
         }
     }
-    percentage=parseFloat(messageCounter);
-    return (percentage);
+    if(!(quick_resp==1)){
+        msg=filter(msg);
+        for(let x in msg){
+            if(question_arr.includes(msg[x])||check_validity(msg[x],question_arr)){
+                messageCounter+=1;
+            }
+        }
+        if(!(required.length==0)){
+            var bool=false;
+            for(let x in msg){
+                if(required.includes(msg[x])||check_validity(msg[x],required)){
+                    bool=true;
+                    messageCounter+=100;
+                }
+            }
+            if(!(bool)){messageCounter=0;}
+        }
+        if(!(special==1)){
+            negative.push("my","mine","me","his","her","them");
+        }
+        if(!(negative.length==0)){
+            for(let x in msg){
+                if(negative.includes(msg[x])||check_validity(msg[x],negative)){
+                    messageCounter=0;
+                    break;
+                }
+            }
+        }}
+        percentage=parseFloat(messageCounter);
+        return (percentage);
 }
 async function get_resp(msg){
     let alu_val=alu(msg);
@@ -238,9 +267,10 @@ async function get_resp(msg){
         //name:msg_certainity(msg,q.name["keywords"],q.name["required"]),
     };
     for(let x in q_keys){
-        r[q_keys[x]]=msg_certainity(msg,q[q_keys[x]].keywords,q[q_keys[x]].required,q[q_keys[x]].negative,q[q_keys[x]].special);
+        r[q_keys[x]]=msg_certainity(msg,q[q_keys[x]].keywords,q[q_keys[x]].required,q[q_keys[x]].negative,q[q_keys[x]].special,q[q_keys[x]].match_sen,q[q_keys[x]].negative_sen,q[q_keys[x]].quick_resp);
     }
-    alert(lp(r));
+    //alert(lp(r));
+    console.log(r);
     let values=Object.values(r);
     //get max
     let max=Math.max(...values);
@@ -249,7 +279,7 @@ async function get_resp(msg){
         let ans=data.response[answer_key];
         let index=rand(ans.length);
         let response_txt=  data.response[answer_key][index];
-        let cfc=check_for_commands(response_txt);
+        let cfc=check_for_commands(response_txt,filter(msg,false));
         if(cfc!=false){
             return cfc;
         }else{

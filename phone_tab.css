@@ -1,4 +1,4 @@
-@media (min-width: 200px) and (max-width:605px){
+@media (min-width: 309px) and (max-width:605px){
     div.profile{
         top:200px;
     }
@@ -6,11 +6,14 @@
         height:150px;
         width:150px;
     }
-    div.msg{
-        width:70%;
+    div.user_msg{
+        width: 70%;
     }
     div#msg_bar input{
         width:60vw;
+    }
+    div.msg_section{
+        width:97%;
     }
 }
 @media (min-width:606px) and (max-width:800px){
@@ -22,15 +25,32 @@
     section#container{
         height:70vh;
     }
+    div#picture{
+        height:130px;
+        width:130px;
+    }
 }
 @media only screen and (max-height: 440px){
     section#container{
         height:60vh;
     }
-    button.sent{
-        width:50px;
+    div.profile{
+        top:150px;
     }
-    button.spotify{
-        width:60px;
+    div#picture{
+        height:110px;
+        width:110px;
+    }
+}
+@media only screen and (max-height: 310px){
+    section#container{
+        height:55vh;
+    }
+    div.profile{
+        top:100px;
+    }
+    div#picture{
+        height:80px;
+        width:80px;
     }
 }

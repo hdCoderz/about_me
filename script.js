@@ -18,7 +18,7 @@ function on_load(){
                 e.style.height="50px";
                 e.style.width="50px";
                 document.getElementById("intial_msg").style.display="block";
-                document.getElementById("msgbox").classList.add("grid");
+                document.getElementById("msgbox").classList.add("flex");
                 setTimeout(()=>{document.getElementById("intial_msg").style.opacity="1";},100);
             },10);
         },5000);
