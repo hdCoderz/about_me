@@ -173,8 +173,8 @@ function replace_txts(txt){
     return txt;
 }
 function filter(txt){
-    txt=replace_txts(txt);
     txt=txt.toLowerCase();
+    txt=replace_txts(txt);
     if(txt.includes(" ")){
         txt=txt.split(" ");
         return txt;
