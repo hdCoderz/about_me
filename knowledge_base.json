@@ -343,7 +343,7 @@
             "quick_resp":1
         },
         "same":{
-            "keywords":["damn","dam","aw","shut up","shit up","mew","meow","woof","yes","no","fr","real","riyal","reak","greeting","o","oh","anyway","hm","hmm","hmmm","hmmph","hmph","sigh","moo","oink","quack","ass","trash","mf","mf-","bsdk","bc","shit","fuck","bitch","bro","brother","bhai","no one asked","who asked"],
+            "keywords":["damn","fs","dam","aw","shut","mew","meow","woof","yes","no","fr","real","riyal","reak","greeting","o","oh","anyway","hm","hmm","hmmm","hmmph","hmph","sigh","moo","oink","quack","ass","trash","mf","mf-","bsdk","bc","shit","fuck","bitch","bro","brother","bhai"],
             "required":[],
             "negative":[],
             "special":0,
@@ -377,6 +377,15 @@
             "match_sen":["who is your favourite youtuber","which youtube channels do you watch"],
             "negative_sen":[],
             "quick_resp":0
+        },
+            "ws":{
+            "keywords":[],
+            "required":[],
+            "negative":[],
+            "special":0,
+            "match_sen":["who asked","no one asked"],
+            "negative_sen":[],
+            "quick_resp":1
         },
         "no":{
             "keywords":["dumb","behen","sista","sister","sis","idiot","stupid","moron","coward","trash"],
@@ -472,6 +481,7 @@
         "pronouns":["If you are asking my pronouns I am he/him"],
         "nicknames":["Hello someone I know","Hi someone whom I am familiar with"],
         "yes":["yes"],
+        "ws":["shut up"],
         "tired":["make sure to get proper sleep","make sure to get proper rest"]
     }
 }
