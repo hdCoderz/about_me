@@ -199,8 +199,8 @@
             "quick_resp":0
         },
         "hru":{
-            "keywords":["hry","hru","how","you","hud","hyd"],
-            "required":["hry","hru","doing","hud","hyd"],
+            "keywords":["hry","hru","how","you","hud","hyd","doing"],
+            "required":[],
             "negative":[],
             "special":0,
             "match_sen":[],
@@ -208,8 +208,8 @@
             "quick_resp":0
         },
         "wyd":{
-            "keywords":["wyd","wud","what","you","doing","sup"],
-            "required":["doing","wyd","wud","sup"],
+            "keywords":["wyd","wud","what","doing","sup"],
+            "required":[],
             "negative":[],
             "special":0,
             "match_sen":[],
