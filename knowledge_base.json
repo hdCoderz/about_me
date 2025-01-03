@@ -33,7 +33,7 @@
             "negative":[],
             "special":0,
             "match_sen":["real life","real name"],
-            "negative_sen":["what is my name","what's my name","you know my name","tell my name","say my name"],
+            "negative_sen":["what is my name","what's my name","you know my name","tell my name","say my name","my name"],
             "quick_resp":0
         },
         "age":{
