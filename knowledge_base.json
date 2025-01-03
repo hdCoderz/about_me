@@ -397,11 +397,11 @@
             "quick_resp":1
         },
         "no":{
-            "keywords":["dumb","behen","sista","sister","sis","idiot","stupid","moron","coward","trash"],
+            "keywords":["dumb","behen","sista","sister","sis","idiot","stupid","moron","coward","trash","address","reveal","secret"],
             "required":[],
             "negative":[],
             "special":0,
-            "match_sen":["give me your whatsapp","your phone number","your phone no.","are you dumb","are you trash"],
+            "match_sen":["give me your whatsapp","your phone number","your phone no.","are you dumb","are you trash","face reveal"],
             "negative_sen":[],
             "quick_resp":0
         },
@@ -415,7 +415,7 @@
             "quick_resp":0
         },
         "nicknames":{
-            "keywords":["han","fhd"],
+            "keywords":["han","fhd","hd"],
             "required":[],
             "negative":[],
             "special":0,
