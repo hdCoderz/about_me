@@ -21,7 +21,7 @@
         "greetings":{
             "keywords":["hi","hello","hlo","halo","ola","hey","hie","yo","bonjour","konichiwa","jumbo","namaste","ram"],
             "required":[],
-            "negative":[],
+            "negative":["his","her"],
             "special":0,
             "match_sen":[],
             "negative_sen":[],
