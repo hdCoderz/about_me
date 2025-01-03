@@ -1,8 +1,8 @@
 {
     "questions":{
         "hd":{
-            "keywords":["who","hd","intro","introduction"],
-            "required":["introduction","intro"],
+            "keywords":["who","intro","introduction","about"],
+            "required":[],
             "negative":[],
             "special":0,
             "match_sen":[],
