@@ -199,7 +199,7 @@
             "quick_resp":0
         },
         "hru":{
-            "keywords":["hry","hru","how","you","hud","hyd","doing"],
+            "keywords":["hry","hru","how","hud","hyd","doing"],
             "required":[],
             "negative":[],
             "special":0,
