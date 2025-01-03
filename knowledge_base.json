@@ -145,7 +145,7 @@
             "quick_resp":0
         },
         "goodbye":{
-            "keywords":["bye","see","soon","gtg","gotta","go","cya","goodbye"],
+            "keywords":["peace","bye","see","soon","gtg","gotta","go","cya","goodbye"],
             "required":[],
             "negative":[],
             "special":1,
@@ -203,7 +203,7 @@
             "required":[],
             "negative":[],
             "special":0,
-            "match_sen":[],
+            "match_sen":["how is your day","how are you today","how is hd today","how hd has been","how you have been"],
             "negative_sen":[],
             "quick_resp":0
         },
