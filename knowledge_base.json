@@ -325,7 +325,7 @@
             "quick_resp":0
         },
         "wlcm":{
-            "keywords":["ty","thank","tyt","tysm","thx","tanks","thbkyu"],
+            "keywords":["ty","thank","tyt","tysm","thx","tanks","thabkyu","thabk","tyfa","thankyou","thnk","thnkyu"],
             "required":[],
             "negative":[],
             "special":0,
@@ -348,7 +348,7 @@
             "negative":[],
             "special":0,
             "match_sen":["are you single","you are single","you have gf","you have girlfriend","are you in relationship"," relationship "],
-            "negative_sen":[" relationship between "],
+            "negative_sen":["relationship between "],
             "quick_resp":1
         },
         "same":{
