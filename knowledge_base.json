@@ -163,7 +163,7 @@
             "quick_resp":0
         },
         "ok":{
-            "keywords":["decent","ok","oka","k","okay","welcome","wlcm"],
+            "keywords":["decent","yw","ok","oka","k","okay","welcome","wlcm"],
             "required":[],
             "negative":[],
             "special":0,
@@ -401,7 +401,7 @@
             "required":[],
             "negative":[],
             "special":0,
-            "match_sen":["give me your whatsapp","your phone number","your phone no.","are you dumb","are you trash","face reveal","voice reveal","how you sound","your voice","your face"],
+            "match_sen":["give me your whatsapp","your phone number","your phone no.","are you dumb","are you trash","face reveal","voice reveal","how you sound","your voice","your face","what's your address","what is your address","hd's address","his address","her address","hd address"],
             "negative_sen":[],
             "quick_resp":0
         },
