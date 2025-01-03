@@ -19,7 +19,7 @@
             "quick_resp":0
         },
         "greetings":{
-            "keywords":["hi","hello","hlo","halo","ola","hey","hie","bonjour","konichiwa","jumbo","namaste","ram"],
+            "keywords":["hi","hello","hlo","halo","ola","hey","hie","yo","bonjour","konichiwa","jumbo","namaste","ram"],
             "required":[],
             "negative":[],
             "special":0,
@@ -401,7 +401,7 @@
             "required":[],
             "negative":[],
             "special":0,
-            "match_sen":["give me your whatsapp","your phone number","your phone no.","are you dumb","are you trash","face reveal"],
+            "match_sen":["give me your whatsapp","your phone number","your phone no.","are you dumb","are you trash","face reveal","voice reveal","how you sound","your voice","your face"],
             "negative_sen":[],
             "quick_resp":0
         },
